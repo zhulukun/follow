@@ -1,0 +1,109 @@
+Searching 638 files for "118.187.12.67"
+
+Unable to open /Library/WebServer/Documents/follow/session/ci_sessiond0bc54aa29d8cc918c1a2d8347a30c30fc5cacc2
+0 matches across 0 files
+
+
+Searching 669 files for "118.187.12.67"
+
+/Library/WebServer/Documents/follow/application/controllers/Login.php:
+   25  		if (isset($_SESSION['username'])) 
+   26  		{
+   27: 			header('Location: http://118.187.12.67/follow/main.html');
+   28  		}
+   29  		else
+
+/Library/WebServer/Documents/follow/application/views/historyInfo.php:
+  692                          for ($i=0; $i <count($arr)-1 ; $i++) { 
+  693                            # code...
+  694:                           echo "<img src='http://118.187.12.67/follow/uploads/".$arr[$i]."' style='width:20%;margin-bottom:10px;'>";
+  695                            echo "<br/>";
+  696                          }
+  ...
+  715                          for ($i=0; $i <count($arr)-1 ; $i++) { 
+  716                            # code...
+  717:                           echo "<img src='http://118.187.12.67/follow/uploads/".$arr[$i]."' style='width:20%;margin-bottom:10px;'>";
+  718                            echo "<br/>";
+  719                          }
+
+/Library/WebServer/Documents/follow/js/login.js:
+   70          
+   71          var data = JSON.stringify({"username": username, "password": password });
+   72: 			var url = "http://118.187.12.67/follow/index.php/loginValid";  
+   73  				$.ajax({  
+   74  							type: "post", 
+   ..
+   85  											if(msg.status=="valid")
+   86  											{
+   87: 												window.location ="http:///118.187.12.67/follow/main.html";
+   88  												return;
+   89  											}
+   ..
+  114          	var data = JSON.stringify({"phoneNo" : phoneNo});
+  115  
+  116: 			var url = "http://118.187.12.67/follow/index.php/MessageInterface";  
+  117  				$.ajax({  
+  118  							type: "post",  
+
+/Library/WebServer/Documents/follow/main.html:
+   11  <meta name="description" content="hovertree" />
+   12  <title>跟台管理系统</title>
+   13: <link rel="stylesheet" href="http://118.187.12.67/follow/css/follow_main.css" /> 
+   14: <link href="http://118.187.12.67/follow/css/bootstrap2.0/bootstrap.min.css" rel="stylesheet">
+   15: <link href="http://118.187.12.67/follow/css/bootstrap2.0/bootstrap-responsive.min.css" rel="stylesheet">
+   16: <script type="text/javascript" src="http://118.187.12.67/follow/js/jquery.min.js"></script>
+   17: <script type="text/javascript" src="http://118.187.12.67/follow/js/bootstrap.min.js"></script>
+   18: <script type="text/javascript" src="http://118.187.12.67/follow/js/main1.js"></script>
+   19: <script type="text/javascript" src="http://118.187.12.67/follow/js/jquery.cookie.js"></script>
+   20: <script type="text/javascript" src="http://118.187.12.67/follow/js/jquery.form.js"></script>
+   21  <style type="text/css">
+   22  
+   ..
+  841  
+  842  <div class="menu">
+  843: <div class="bt-name"><a href="http://118.187.12.67/follow/main.html" target="self">编辑</a></div>
+  844  </div><!--menu-->
+  845  
+  846  <div class="menu">
+  847: <div class="bt-name"><a href="http://118.187.12.67/follow/index.php/history" target="self">历史记录</a></div>
+  848  
+  849  </div><!--menu-->
+  ...
+  853  <div class="sanjiao"></div>
+  854  <ul class="new-sub">
+  855: <li><a href="http://118.187.12.67/follow/index.php/admin" target="self">管理员登陆</a></li>
+  856: <li><a href="http://118.187.12.67/follow/index.php/login" target="self">用户登陆</a></li>
+  857  </ul>
+  858  </div><!--menu-->
+  ...
+  877  
+  878    var btn = $(".btn span");
+  879:   $("#fileupload").wrap("<form id='myupload' action='http://118.187.12.67/follow/action.php' method='post' enctype='multipart/form-data'></form>");
+  880      $("#fileupload").change(function(){
+  881      $("#myupload").ajaxSubmit({
+  ...
+  896        success: function(data) {
+  897          files.html("<b>"+data.name+"("+data.size+"k)</b> <span class='delimg' rel='"+data.pic+"'></span>");
+  898:         var img = "http://118.187.12.67/follow/uploads/"+data.pic;
+  899         // alert($('#beforImage').val()+data.pic+'|');
+  900          $('#beforImage').val($('#beforImage').val()+data.pic+'|');
+  ...
+  909      });
+  910    });
+  911:   $("#fileupload1").wrap("<form id='myupload1' action='http://118.187.12.67/follow/action.php' method='post' enctype='multipart/form-data'></form>");
+  912      $("#fileupload1").change(function(){
+  913      $("#myupload1").ajaxSubmit({
+  ...
+  928        success: function(data) {
+  929          files1.html("<b>"+data.name+"("+data.size+"k)</b> <span class='delimg' rel='"+data.pic+"'></span>");
+  930:         var img = "http://118.187.12.67/follow/uploads/"+data.pic;
+  931          // alert($('#middleImage').val()+data.pic+'|');
+  932          $('#middleImage').val($('#middleImage').val()+data.pic+'|');
+  ...
+  943    $(".delimg").live('click',function(){
+  944      var pic = $(this).attr("rel");
+  945:     $.post("http://118.187.12.67/follow/action.php?act=delimg",{imagename:pic},function(msg){
+  946        if(msg==1){
+  947          files1.html("删除成功.");
+
+23 matches across 4 files
