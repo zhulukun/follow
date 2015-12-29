@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://118.187.12.67/follow/';
+$config['base_url'] = 'http://localhost/follow/';
 
 /*
 |--------------------------------------------------------------------------
