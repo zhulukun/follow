@@ -1,4 +1,4 @@
-/application/config/
-/js/
-/session/
-/uploads/
+/application/config
+/js
+/session
+/uploads
