@@ -27,6 +27,16 @@ class HistoryInfo extends CI_Controller {
 		
       	$arr = $this->User_model->getHistoryInfo($id);
       	$data['arr']=$arr;
-		$this->load->view('historyInfo',$data);
+      	if ($this->User_model->is_can_update($id))
+      	{
+      		$this->load->view('historyInfo_update',$data);
+      	}
+      	else
+      	{
+      		$this->load->view('historyInfo',$data);
+      	}
+		
 	}
+
+	
 }
