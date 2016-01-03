@@ -134,6 +134,8 @@
            return false;
         } 
 
+
+        //更改跟台信息
         function update($id,$nickname,$username,$date,$hospital,$department,$doctorName,$assistantName,$medicalRecordNo,$patientName,$patientAge,$patientSex,$diagnosis,$operationName,$optStartTime,$optEndTime,$optSite,$optroute,
           $optsegement,$cuteBoneSegment,$cbStartTime,$cbEndTime,$powerStall,$flowStall,$pulseStall,
           $knife1UseStyle,$knife1type,$knife2UseStyle,$knife2type,$knife3UseStyle,$knife3type,
@@ -150,6 +152,19 @@
               return FALSE;
             }
         } 
+
+        //用户更改密码
+        function renew_password($nickname,$re_password)
+        {
+          $query=$this->db->query("UPDATE yl_user SET password='{$re_password}' WHERE nickname='{$nickname}'");
+          if ($this->db->affected_rows()>0) 
+          {
+            return TRUE;
+          }
+
+          return FALSE;
+        }
+
     }
 
 ?>
