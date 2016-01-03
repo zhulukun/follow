@@ -38,7 +38,6 @@ class AdminValid extends CI_Controller {
 		}
 
 		$this->session->set_userdata('admin',$username);
-		$this->session->set_userdata('username',$username);
 		$callback['status']='valid';
 		echo json_encode($callback);
 		return;
