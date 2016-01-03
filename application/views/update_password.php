@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
-<title>登陆</title>
+<title>修改密码</title>
 
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/login.css" />
@@ -11,7 +11,7 @@
 
  <script type=" text/javascript" src="<?php echo base_url();?>js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/login.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/update_password.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/jquery.mobile.custom.min.js"></script>
 <style type="text/css">
 
@@ -53,15 +53,15 @@ html,body {
 <div class="box">
 		<div class="login-box">
 			<div class="login-title text-center">
-				<h1><small>登录</small></h1>
+				<h1><small>修改密码</small></h1>
 			</div>
 			<div class="login-content ">
 			<div class="form">
 				<div class="form-group">
-					<div class="col-xs-12  ">
+					<div class="col-xs-12">
 						<div class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-							<input type="text" id="username" name="username" class="form-control" placeholder="用户名">
+							<input type="text" id="nickname" name="nickname" class="form-control" placeholder="用户名" value="<?php echo $userinfo;?>">
 						</div>
 					</div>
 				</div>
@@ -69,14 +69,22 @@ html,body {
 					<div class="col-xs-12  ">
 						<div class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-							<input type="password" id="password" name="password" class="form-control" placeholder="密码">
+							<input type="password" id="password" name="password" class="form-control" placeholder="请输入密码">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-12  ">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+							<input type="password" id="password1" name="re_password" class="form-control" placeholder="请再次输入密码">
 						</div>
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="col-xs-12" >
 					<div class="input-group loginbtn">
-						<button type="submit" class="btn btn-sm btn-info" id="login">登录</button>
+						<button type="submit" class="btn btn-sm btn-info" id="submit">确认</button>
 					</div>
 					</div>
 				</div>

@@ -105,6 +105,8 @@ html,body {
 <ul class="new-sub">
 <li><a href="<?php echo base_url();?>index.php/admin" target="self">管理员登陆</a></li>
 <li><a href="<?php echo base_url();?>index.php/login" target="self">用户登陆</a></li>
+<li><a href="<?php echo base_url();?>index.php/user/update_password" target="self">修改密码</a></li>
+
 </ul>
 </div><!--menu-->
 
