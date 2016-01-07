@@ -17,7 +17,7 @@
 		<script type="text/javascript" src="<?php echo base_url();?>js/add.js"></script>
 
 		<script type="text/javascript">
-			if("ontouchend" in document) document.write("<?php echo base_url();?>js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+	<!--		if("ontouchend" in document) document.write("<?php echo base_url();?>js/jquery.mobile.custom.min.js'>"+"<"+"script>");-->
 		</script>
 		<script src="<?php echo base_url();?>js/ace.min.js"></script>
 		<script type="text/javascript">
@@ -78,7 +78,7 @@
 					</script>
 
 					<ul class="nav nav-list">
-						<li class="active">
+						<li>
 							<a href="<?php echo base_url();?>index.php/main">
 								<i class="icon-dashboard"></i>
 								<span class="menu-text">添加用户</span>
@@ -90,7 +90,7 @@
 								<span class="menu-text">查询信息</span>
 							</a>
 						</li>
-						<li>
+						<li class="active">
 							<a href="<?php echo base_url();?>index.php/download">
 								<i class="icon-edit"></i>
 								<span class="menu-text">下载</span>
@@ -118,64 +118,18 @@
 								<i class="icon-home home-icon"></i>
 								<a href="#">首页</a>
 							</li>
-							<li class="active">查询</li>
+							<li class="active">下载</li>
 						</ul><!-- .breadcrumb -->
 						
             <div class="tab-pane fade in active" id="userlist">
     			<div class="box">
 		<div class="login-box" style="top:20%">
 			<div class="title" style="text-align: center;font-size: 18px;">
+				<!-- <span>下载excel</span> -->
 			</div>
-			<div class="login-content" >
-			<form  method="post" action="<?php echo base_url();?>index.php/searchValid"> 
-			<div class="form" >
-				<div class="form-group">
-					<div class="col-xs-12">
-						<div class="input-group">
-							<select class="input-xlarge" id="searchtype" name="searchtype" value="男">
-		                          <option>跟台人员</option>
-		                          <option>日期</option>
-		                          <option>年龄</option>
-		                          <option>医院名称</option>
-		                          <option>主刀医生</option>
-		                          <option>手术部位</option>
-                   		 	</select>
-						</div>
-					</div>
-				</div>
-				
-				<div class="form-group">
-					<div class="col-xs-12 ">
-						<div class="input-group">
-							<input type="text" id="searchinfo" name="searchinfo" class="form-control" placeholder="" style="border-radius:6px;">
-							<span>日期范围查询格式:2015-11-08 2015-11-15</span><br/>
-							<span>年龄范围查询格式:26 42</span>
-						</div>
-
-					</div>
-				</div>
-				
-				<div class="form-group">
-					<div class="col-xs-12" >
-					<div class="input-group loginbtn" style="margin-top:16px">
-						<input type="submit" class="btn btn-sm btn-info" value="查询">
-					</div>
-					</div>
-				</div>
-				</form>
-				<!-- <div class="form-group">
-					<div class="col-xs-6 link">
-						<p class="text-center remove-margin"><small>忘记密码？</small> <a href="javascript:void(0)" ><small>找回</small></a>
-						</p>
-					</div>
-					<div class="col-xs-6 link">
-						<p class="text-center remove-margin"><small>还没注册?</small> <a href="javascript:void(0)" ><small>注册</small></a>
-						</p>
-					</div>
-				</div> -->
+			 <div>
+			 	<a href="<?php echo base_url();?>index.php/excel_export">导出excel<a></div>
 			</div>
-		</div>
-	</div>
 </div>
 </div>
 

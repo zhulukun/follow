@@ -90,6 +90,12 @@
 								<span class="menu-text">查询信息</span>
 							</a>
 						</li>
+						<li>
+							<a href="<?php echo base_url();?>index.php/download">
+								<i class="icon-edit"></i>
+								<span class="menu-text">下载</span>
+							</a>
+						</li>
 
 					</ul><!-- /.nav-list -->
 
