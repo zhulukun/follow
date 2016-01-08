@@ -22,9 +22,9 @@ class Download extends CI_Controller {
 	{
 		$this->load->helper('url');
 		$this->load->library('session');
-		if (isset($_SESSION['admin'])) {
+		if (!isset($_SESSION['admin'])) {
 
-		   $this->load->view('admin/main');
+		   $this->load->view('admin');
 
 		 }
 		 else
