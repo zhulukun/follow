@@ -24,17 +24,17 @@ class LoginValid extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->library('session');
 
-		$post = (array)json_decode(file_get_contents("php://input"));
 
-		$username=$post['username'];
-		$password=$post['password'];
+		$username=$_POST['username'];
+		$password=$_POST['password'];
+
 		$this->load->model('User_model');
       	$bool = $this->User_model->valid($username,$password);
       	
       	if(!$bool)
       	{
-			$callback['status']='invalid';
-			echo json_encode($callback);
+			$data['error']='用户名或密码错误';
+			$this->load->view('login',$data);
 			return;
 		}
 		$user_id=$this->User_model->get_user_id($username);
@@ -42,9 +42,7 @@ class LoginValid extends CI_Controller {
 		$this->session->set_userdata('username',$username);
 		$this->session->set_userdata('user_id',$user_id);
 		
-		$callback['status']='valid';
-		$callback['username']=$username;
-		echo json_encode($callback);
+		header("Location:".base_url()."main.html");
 		return;
 
 	}

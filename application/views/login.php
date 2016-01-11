@@ -56,7 +56,9 @@ html,body {
 				<h1><small>登录</small></h1>
 			</div>
 			<div class="login-content ">
+			<form action="<?php echo base_url();?>index.php/loginValid" method="post">
 			<div class="form">
+
 				<div class="form-group">
 					<div class="col-xs-12  ">
 						<div class="input-group">
@@ -76,14 +78,20 @@ html,body {
 				<div class="form-group">
 					<div class="col-xs-12" >
 					<div class="input-group loginbtn">
-						<button type="submit" class="btn btn-sm btn-info" id="login">登录</button>
+						<input type="submit" class="btn btn-sm btn-info"  style="background-color:#8D180A" value="登录"/>
 					</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-12" >
+					<span style="margin-left:30px;color:#FFFFFF"><?php echo $error;?></span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
 
 <div class="keleyirap">
 

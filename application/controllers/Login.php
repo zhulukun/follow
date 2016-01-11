@@ -22,13 +22,7 @@ class Login extends CI_Controller {
 	{
 		$this->load->helper('url');
 		$this->load->library('session');
-		// if (isset($_SESSION['username'])) 
-		// {
-		// 	header('Location: http://localhost/follow/main.html');
-		// }
-		// else
-		// {
-			$this->load->view('login');
-		// }
+		$data['error']='';
+			$this->load->view('login',$data);
 	}
 }
