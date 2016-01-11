@@ -22,15 +22,9 @@ class Admin extends CI_Controller {
 	{
 		$this->load->helper('url');
 		$this->load->library('session');
-		// if (isset($_SESSION['admin'])) {
+		$data['error']='';
+	 	$this->load->view('admin/admin',$data);
 
-		// 	$this->load->view('admin/main');
-
-		// }
-		// else
-		// {
-	 		$this->load->view('admin/admin');
-	 	// }
 	}
 
 }

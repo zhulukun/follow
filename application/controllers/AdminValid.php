@@ -22,24 +22,22 @@ class AdminValid extends CI_Controller {
 	{
 		$this->load->helper('url');
 		$this->load->library('session');
-		$post = (array)json_decode(file_get_contents("php://input"));
+		
 
-		$username=$post['username'];
-		$password=$post['password'];
+		$username=$_POST['username'];
+		$password=$_POST['password'];
 
 		$this->load->model('Admin_model');
 
       	$bool = $this->Admin_model->valid($username,$password);
       	if(!$bool)
       	{
-			$callback['status']='invalid';
-			echo json_encode($callback);
-			return;
+			$data['error']='用户名或密码错误';
+			$this->load->view('admin/admin',$data);
 		}
 
 		$this->session->set_userdata('admin',$username);
-		$callback['status']='valid';
-		echo json_encode($callback);
+		$this->load->view('admin/main');
 		return;
 	}
 }
