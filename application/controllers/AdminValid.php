@@ -34,6 +34,7 @@ class AdminValid extends CI_Controller {
       	{
 			$data['error']='用户名或密码错误';
 			$this->load->view('admin/admin',$data);
+			return;
 		}
 
 		$this->session->set_userdata('admin',$username);
