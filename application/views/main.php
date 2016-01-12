@@ -149,8 +149,8 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">跟台人员:<div class="divxing"><font class="xing">*</font></div></label>          <div class="controls">
-            <input placeholder="跟台人员" id="username" class="input-xlarge" type="text">
+          <label class="control-label" for="input01">跟台人员:</label>          <div class="controls">
+            <input placeholder="跟台人员(必填)" id="username" class="input-xlarge" type="text">
            <p class="help-block"></p>
           </div>
         </div>
@@ -158,18 +158,18 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">日期:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">日期:</label>
           <div class="controls">
-            <input placeholder="点击自动获取日期" id="date" class="input-xlarge" type="text" onBlur="checkDate();"><button type="button" class="btn btn-primary" id="getdate" style="padding:5px;margin-left:5px;margin-top:5px;">获取日期</button>
+            <input placeholder="点击自动获取日期(必填)" id="date" class="input-xlarge" type="text" onBlur="checkDate();"><button type="button" class="btn btn-primary" id="getdate" style="padding:5px;margin-left:5px;margin-top:5px;">获取日期</button>
             <p class="help-block"></p>
           </div>
         </div>
 
     <div class="control-group">
           <!-- Text input-->
-          <label class="control-label" for="input01">医院名称:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">医院名称:</label>
           <div class="controls">
-            <input placeholder="医院名称" id="hospital" class="input-xlarge" type="text">
+            <input placeholder="医院名称(必填)" id="hospital" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div>
@@ -177,9 +177,9 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">科室:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">科室:</label>
           <div class="controls">
-            <input placeholder="科室" id="department" class="input-xlarge" type="text">
+            <input placeholder="科室(必填)" id="department" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div>
@@ -189,9 +189,9 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">主刀医生:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">主刀医生:</label>
           <div class="controls">
-            <input placeholder="主刀医生" id="doctorName" class="input-xlarge" type="text">
+            <input placeholder="主刀医生(必填)" id="doctorName" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div>
@@ -200,7 +200,7 @@ text-decoration:none;
           <!-- Text input-->
           <label class="control-label" for="input01">一助:</label>
           <div class="controls">
-            <input placeholder="一助" id="assistantName" class="input-xlarge" type="text">
+            <input placeholder="一助(必填)" id="assistantName" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div>
@@ -231,9 +231,9 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">患者病历号:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">患者病历号:</label>
           <div class="controls">
-            <input placeholder="患者病历号" id="medicalRecordNo" class="input-xlarge" type="text">
+            <input placeholder="患者病历号(必填)" id="medicalRecordNo" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div>
@@ -241,9 +241,9 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">姓名:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">姓名:</label>
           <div class="controls">
-            <input placeholder="姓名" id="patientName" class="input-xlarge" type="text">
+            <input placeholder="姓名(必填)" id="patientName" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div>
@@ -253,13 +253,13 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">年龄:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">年龄:</label>
           <div class="controls">
-            <input  id="patientAge" class="input-xlarge" value="35" type="text">
+            <input  id="patientAge" placeholder="年龄(必填)" class="input-xlarge" value="35" type="text">
             <p class="help-block"></p>
           </div>
         </div><div class="control-group">
-          <label class="control-label">性别:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">性别:</label>
           <div class="controls">
                      <select class="input-xlarge" id="patientSex" value="男">
                           <option>男</option>
@@ -272,9 +272,9 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">术前诊断:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">术前诊断:</label>
           <div class="controls">
-            <input placeholder="术前诊断" id="diagnosis" class="input-xlarge" type="text">
+            <input placeholder="术前诊断(必填)" id="diagnosis" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div>
@@ -284,17 +284,17 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">手术名称:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">手术名称:</label>
           <div class="controls">
-            <input placeholder="手术名称" id="operationName" class="input-xlarge" type="text">
+            <input placeholder="手术名称(必填)" id="operationName" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div><div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">手术开始时间:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">手术开始时间:</label>
           <div class="controls">
-            <input placeholder="手术开始时间" id="optStartTime" class="input-xlarge" type="text" onBlur="checkOptStartTime();"><button type="button" class="btn btn-primary" id="getstarttime" style="padding:5px;margin-left:5px;margin-top:5px;">获取开始时间</button>
+            <input placeholder="手术开始时间(必填)" id="optStartTime" class="input-xlarge" type="text" onBlur="checkOptStartTime();"><button type="button" class="btn btn-primary" id="getstarttime" style="padding:5px;margin-left:5px;margin-top:5px;">获取开始时间</button>
             <p class="help-block"></p>
           </div>
         </div>
@@ -302,9 +302,9 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">手术结束时间:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">手术结束时间:</label>
           <div class="controls">
-            <input placeholder="手术结束时间" id="optEndTime" class="input-xlarge" type="text" onBlur="checkOptEndTime();"><button type="button" class="btn btn-primary" id="getendtime" style="padding:5px;margin-left:5px;margin-top:5px;">获取结束时间</button>
+            <input placeholder="手术结束时间(必填)" id="optEndTime" class="input-xlarge" type="text" onBlur="checkOptEndTime();"><button type="button" class="btn btn-primary" id="getendtime" style="padding:5px;margin-left:5px;margin-top:5px;">获取结束时间</button>
             <p class="help-block"></p>
           </div>
         </div>
@@ -337,7 +337,7 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Select Basic -->
-          <label class="control-label">手术部位:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">手术部位:</label>
           <div class="controls">
             <select class="input-xlarge" id="optSite">
       <option>腰椎</option>
@@ -354,7 +354,7 @@ text-decoration:none;
         </div><div class="control-group">
 
           <!-- Select Basic -->
-          <label class="control-label">手术入路:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">手术入路:</label>
           <div class="controls">
             <select class="input-xlarge" id="optroute">
       <option>后入路</option>
@@ -369,39 +369,39 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">手术节段:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">手术节段:</label>
           <div class="controls">
-            <input placeholder="手术节段" id="optsegement" class="input-xlarge" type="text">
+            <input placeholder="手术节段(必填)" id="optsegement" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div><div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">截骨节段:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">截骨节段:</label>
           <div class="controls">
-            <input placeholder="截骨节段" id="cuteBoneSegment" class="input-xlarge" type="text">
+            <input placeholder="截骨节段(必填)" id="cuteBoneSegment" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div><div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">切骨开始时间:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">切骨开始时间:</label>
           <div class="controls">
-            <input placeholder="切骨开始时间" id="cbStartTime" class="input-xlarge" type="text" onBlur="checkCutStartTime();"><button type="button" class="btn btn-primary" id="getcutestarttime" style="padding:5px;margin-left:5px;margin-top:5px;">切骨开始时间</button>
+            <input placeholder="切骨开始时间(必填)" id="cbStartTime" class="input-xlarge" type="text" onBlur="checkCutStartTime();"><button type="button" class="btn btn-primary" id="getcutestarttime" style="padding:5px;margin-left:5px;margin-top:5px;">切骨开始时间</button>
             <p class="help-block"></p>
           </div>
         </div><div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">切骨时长:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">切骨时长:</label>
           <div class="controls">
-            <input placeholder="切骨时长" id="cbEndTime" class="input-xlarge" type="text">
+            <input placeholder="切骨时长(必填)" id="cbEndTime" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div><div class="control-group">
 
           <!-- Select Basic -->
-          <label class="control-label">功率档位:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">功率档位:</label>
           <div class="controls">
             <select class="input-xlarge" id="powerStall">
       <option>5</option>
@@ -413,14 +413,10 @@ text-decoration:none;
 
         </div>
 
-    
-
-    
-
     <div class="control-group">
 
           <!-- Select Basic -->
-          <label class="control-label">流量档位:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">流量档位:</label>
           <div class="controls">
             <select class="input-xlarge" id="flowStall">
       <option>10</option>
@@ -444,7 +440,7 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Select Basic -->
-          <label class="control-label">脉冲档位:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">脉冲档位:</label>
           <div class="controls">
             <select class="input-xlarge" id="pulseStall">
       <option>6</option>
@@ -460,7 +456,7 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Select Basic -->
-          <label class="control-label">刀头1类型:</div></label>
+          <label class="control-label">刀头1类型:</label>
           <div class="controls">
             <select class="input-xlarge" id="knife1type">
       <option>多齿片形刀头</option>
@@ -480,7 +476,7 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">刀头1使用方法:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">刀头1使用方法:</label>
           <div class="controls">
             <div class="textarea">
                   <textarea type="" class="" id="knife1UseStyle"> </textarea>
@@ -512,7 +508,7 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">(有必填)刀头2使用方法:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">(有必填)刀头2使用方法:</label>
           <div class="controls">
             <div class="textarea">
                   <textarea type="" id="knife2UseStyle" class=""> </textarea>
@@ -544,7 +540,7 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">(有必填)刀头3使用方法:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">(有必填)刀头3使用方法:</label>
           <div class="controls">
             <div class="textarea">
                   <textarea type="" id="knife3UseStyle" class=""> </textarea>
@@ -557,17 +553,17 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">出血量(ml):<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">出血量(ml):</label>
           <div class="controls">
-            <input placeholder="出血量" id="bloodingSize" class="input-xlarge" type="text">
+            <input placeholder="出血量(必填)" id="bloodingSize" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div><div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">自体血回输量(ml):<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">自体血回输量(ml):</label>
           <div class="controls">
-            <input placeholder="自体血回输量" id="selfBloodReturnSize" class="input-xlarge" type="text">
+            <input placeholder="自体血回输量(必填)" id="selfBloodReturnSize" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div>
@@ -579,9 +575,9 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Text input-->
-          <label class="control-label" for="input01">输血量(ml):<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label" for="input01">输血量(ml):</label>
           <div class="controls">
-            <input placeholder="输血量" id="bloodInSize" class="input-xlarge" type="text">
+            <input placeholder="输血量(必填)" id="bloodInSize" class="input-xlarge" type="text">
             <p class="help-block"></p>
           </div>
         </div>
@@ -624,7 +620,7 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">(有必填)原因:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">(有必填)原因:</label>
           <div class="controls">
             <div class="textarea">
                   <textarea type="" id="putamenHarmReason" class=""> </textarea>
@@ -643,7 +639,7 @@ text-decoration:none;
         </div><div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">(有必填)原因:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">(有必填)原因:</label>
           <div class="controls">
             <div class="textarea">
                   <textarea type="" id="cerebroLeakageReason" class=""> </textarea>
@@ -666,7 +662,7 @@ text-decoration:none;
         </div><div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">(有必填)原因:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">(有必填)原因:</label>
           <div class="controls">
             <div class="textarea">
                   <textarea type="" id="nerveHurtReason" class=""> </textarea>
@@ -691,7 +687,7 @@ text-decoration:none;
         </div><div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">(有必填)原因:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">(有必填)原因:</label>
           <div class="controls">
             <div class="textarea">
                   <textarea type="" id="elecPhyTestReason" class=""> </textarea>
@@ -717,7 +713,7 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">(有必填)原因:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">(有必填)原因:</label>
           <div class="controls">
             <div class="textarea">
                   <textarea type="" id="optAwakenReason" class=""> </textarea>
@@ -736,7 +732,7 @@ text-decoration:none;
         </div><div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">(有必填)原因:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">(有必填)原因:</label>
           <div class="controls">
             <div class="textarea">
                   <textarea type="" id="knifeAbrasionReason" class=""> </textarea>
@@ -783,21 +779,20 @@ text-decoration:none;
     <div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">跟台评价:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">(必填)跟台评价:</label>
           <div class="controls">
             <div class="textarea">
-                  <textarea type="" id="followCommit" class="" rows="10" cols="20"> </textarea>
+                  <textarea type="" id="followCommit" rows="10" cols="20"> </textarea>
             </div>
           </div>
         </div>
-
     <div class="control-group">
 
           <!-- Textarea -->
-          <label class="control-label">术中医生建议:<div class="divxing"><font class="xing">*</font></div></label>
+          <label class="control-label">术中医生建议:</label>
           <div class="controls">
             <div class="textarea">
-                  <textarea type="" id="doctorSugest" class="" rows="10" cols="20"> </textarea>
+                  <textarea type="" id="doctorSugest" rows="10" cols="20"> </textarea>
             </div>
           </div>
         </div>

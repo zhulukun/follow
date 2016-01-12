@@ -57,11 +57,20 @@ html,body {
 			</div>
 			<div class="login-content ">
 			<div class="form">
+				<form action="<?php echo base_url();?>index.php/user/renew_password" method="post">
 				<div class="form-group">
 					<div class="col-xs-12">
 						<div class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
 							<input type="text" id="nickname" name="nickname" class="form-control" placeholder="用户名" value="<?php echo $userinfo;?>">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-12  ">
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+							<input type="password" id="oldpassword" name="oldpassword" class="form-control" placeholder="请输入旧密码">
 						</div>
 					</div>
 				</div>
@@ -84,10 +93,16 @@ html,body {
 				<div class="form-group">
 					<div class="col-xs-12" >
 					<div class="input-group loginbtn">
-						<button type="submit" class="btn btn-sm btn-info" id="submit">确认</button>
+						<input type="submit" class="btn btn-sm btn-info" style="background-color:#8D180A"/>
 					</div>
 					</div>
 				</div>
+				<div class="form-group">
+					<div class="col-xs-12" >
+					<span style="margin-left:30px;color:#FFFFFF"><?php echo $error;?></span>
+					</div>
+				</div>
+			</form>
 			</div>
 		</div>
 	</div>

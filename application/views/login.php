@@ -88,6 +88,7 @@ html,body {
 					</div>
 				</div>
 			</div>
+		</form>
 		</div>
 	</div>
 </div>
@@ -99,16 +100,14 @@ html,body {
 <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓3列菜单开始↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
 <div class="btn3 clearfix">
 
-<div class="menu">
-<div class="bt-name"><a href="<?php echo base_url();?>main.html" target="self">编辑</a></div>
-</div><!--menu-->
 
-<div class="menu">
+
+<div class="menu" style="width:50%">
 <div class="bt-name"><a href="<?php echo base_url();?>index.php/history" target="self">历史记录</a></div>
 
 </div><!--menu-->
 
-<div class="menu">
+<div class="menu" style="width:50%">
 <div class="bt-name">用户登陆</div>
 <div class="sanjiao"></div>
 <ul class="new-sub">

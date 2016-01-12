@@ -124,6 +124,7 @@
         }
 
 
+        //判断用户名密码是否合法
         function valid($username,$password)  
         {  
            $query=$this->db->query('select * from yl_user where nickname="'.$username.'" and password="'.$password.'"');

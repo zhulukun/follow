@@ -23,6 +23,6 @@ class Login extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->library('session');
 		$data['error']='';
-			$this->load->view('login',$data);
+		$this->load->view('login',$data);
 	}
 }

@@ -24,21 +24,40 @@ class User extends CI_Controller {
 
 		$this->load->library('session');
 		$this->load->model('User_model');
-		$post = (array)json_decode(file_get_contents("php://input"));
+		$this->load->helper('url');
+		$data['userinfo']=isset($_SESSION['username'])?$_SESSION['username']:'';
+		$nickname=$_POST['nickname'];
+		$oldpassword=$_POST['oldpassword'];
 
-		$nickname=$post['nickname'];
-		$password=$post['password'];
-
-		if($this->User_model->renew_password($nickname,$password))
-		{
-			$callback['status']='ok';
-			echo json_encode($callback);
+		if (!$this->User_model->valid($nickname,$oldpassword)) {
+			$data['error']='老密码不正确';
+			$this->load->view('update_password',$data);
 			return;
 		}
 
-		$callback['status']='fail';
-		echo json_encode($callback);
-		return;
+		$password=$_POST['password'];
+		$repassword=$_POST['re_password'];
+
+		if ($password != $repassword) {
+			$data['error']='新密码不一致';
+			$this->load->view('update_password',$data);
+			return;
+		}
+
+		if (empty($password)) {
+			$data['error']='新密码不能为空';
+			$this->load->view('update_password',$data);
+			return;
+		}
+
+		if($this->User_model->renew_password($nickname,$password))
+		{
+			$data['error']='修改成功';
+			$this->load->view('update_password',$data);
+			return;
+		}
+
+		
 	}
 
 	public function update_password()
@@ -47,6 +66,7 @@ class User extends CI_Controller {
 	    $this->load->library('session');
 
 		$data['userinfo']=isset($_SESSION['username'])?$_SESSION['username']:'';
+		$data['error']='';
 		$this->load->view('update_password',$data);
 
 	}
