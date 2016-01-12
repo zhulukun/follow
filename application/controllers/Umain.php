@@ -33,11 +33,11 @@ class Umain extends CI_Controller {
 		  $main=$this->output->get_output();  
 		  if ( !write_file('./main.html', $main))  
 		  {  
-		   // echo 'Unable to write the file';  
+		   echo 'Unable to write the file';  
 		  }  
 		  else  
 		  {  
-		   // echo 'File written!';  
+		   echo 'File written!';  
 		  }  
 	}
 }
