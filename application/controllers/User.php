@@ -28,15 +28,19 @@ class User extends CI_Controller {
 		$data['userinfo']=isset($_SESSION['username'])?$_SESSION['username']:'';
 		$nickname=$_POST['nickname'];
 		$oldpassword=$_POST['oldpassword'];
+		$password=$_POST['password'];
+		$repassword=$_POST['re_password'];
 
+		$data['oldpassword']=$oldpassword;
+		$data['password']=$password;
+		$data['repassword']=$repassword;
 		if (!$this->User_model->valid($nickname,$oldpassword)) {
 			$data['error']='老密码不正确';
 			$this->load->view('update_password',$data);
 			return;
 		}
 
-		$password=$_POST['password'];
-		$repassword=$_POST['re_password'];
+		
 
 		if ($password != $repassword) {
 			$data['error']='新密码不一致';
@@ -57,6 +61,10 @@ class User extends CI_Controller {
 			return;
 		}
 
+		$data['error']='修改失败';
+		$this->load->view('update_password',$data);
+		return;
+
 		
 	}
 
@@ -66,6 +74,9 @@ class User extends CI_Controller {
 	    $this->load->library('session');
 
 		$data['userinfo']=isset($_SESSION['username'])?$_SESSION['username']:'';
+		$data['oldpassword']='';
+		$data['password']='';
+		$data['repassword']='';
 		$data['error']='';
 		$this->load->view('update_password',$data);
 

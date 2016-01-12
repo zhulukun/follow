@@ -70,7 +70,7 @@ html,body {
 					<div class="col-xs-12  ">
 						<div class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-							<input type="password" id="oldpassword" name="oldpassword" class="form-control" placeholder="请输入旧密码">
+							<input type="password" id="oldpassword" name="oldpassword" class="form-control" placeholder="请输入旧密码" value="<?php echo $oldpassword;?>">
 						</div>
 					</div>
 				</div>
@@ -78,7 +78,7 @@ html,body {
 					<div class="col-xs-12  ">
 						<div class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-							<input type="password" id="password" name="password" class="form-control" placeholder="请输入密码">
+							<input type="password" id="password" name="password" class="form-control" placeholder="请输入密码" value="<?php echo $password;?>">
 						</div>
 					</div>
 				</div>
@@ -86,7 +86,7 @@ html,body {
 					<div class="col-xs-12  ">
 						<div class="input-group">
 							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-							<input type="password" id="password1" name="re_password" class="form-control" placeholder="请再次输入密码">
+							<input type="password" id="password1" name="re_password" class="form-control" placeholder="请再次输入密码" value="<?php echo $repassword;?>">
 						</div>
 					</div>
 				</div>
