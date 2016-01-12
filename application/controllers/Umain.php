@@ -31,7 +31,7 @@ class Umain extends CI_Controller {
 		  $this->load->helper('file');  
 		  $this->load->view('main');  
 		  $main=$this->output->get_output();  
-		  if ( !write_file('./main.html', $main))  
+		  if ( !write_file('./main/main.html', $main))  
 		  {  
 		   echo 'Unable to write the file';  
 		  }  
