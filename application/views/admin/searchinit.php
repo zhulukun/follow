@@ -97,6 +97,14 @@
 							</a>
 						</li>
 
+							<li>
+							<a href="<?php echo base_url();?>main.html">
+								<i class="icon-edit"></i>
+								<span class="menu-text">填写表单</span>
+							</a>
+						</li>
+
+
 					</ul><!-- /.nav-list -->
 
 					<div class="sidebar-collapse" id="sidebar-collapse">
