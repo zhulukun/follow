@@ -25,7 +25,8 @@ class Main extends CI_Controller {
 		$this->load->library('session');
 		if(!isset($_SESSION['admin']))
 		{
-			$this->load->view('admin/admin');
+			$data['error']='请登录';
+			$this->load->view('admin/admin',$data);
 			return;
 		}
 		$this->load->view('admin/main');
