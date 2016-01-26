@@ -58,6 +58,11 @@ html,body {
 			<div class="login-content ">
 			<div class="form">
 				<form action="<?php echo base_url();?>index.php/user/renew_password" method="post">
+					<div class="form-group">
+					<div class="col-xs-12" >
+					<span style="margin-left:30px;color:#FFFFFF"><?php echo $error;?></span>
+					</div>
+				</div>
 				<div class="form-group">
 					<div class="col-xs-12">
 						<div class="input-group">
@@ -97,11 +102,7 @@ html,body {
 					</div>
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="col-xs-12" >
-					<span style="margin-left:30px;color:#FFFFFF"><?php echo $error;?></span>
-					</div>
-				</div>
+				
 			</form>
 			</div>
 		</div>
