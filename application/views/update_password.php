@@ -50,7 +50,7 @@ html,body {
 </head>
 
 <body>
-<div class="box" style="margin-bottom:200px;">
+<div class="box" style="bottom:60px;">
 		<div class="login-box">
 			<div class="login-title text-center">
 				<h1><small>修改密码</small></h1>
