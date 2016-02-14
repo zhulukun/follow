@@ -969,7 +969,7 @@ text-decoration:none;
                         $arr = explode("|", $item['beforImage']);
                         for ($i=0; $i <count($arr)-1 ; $i++) { 
                           # code...
-                           echo "<img src='http://localhost/follow/uploads/".$arr[$i]."' style='width:20%;margin-bottom:10px;'>";
+                           echo "<img src='http://118.187.12.67/follow/uploads/".$arr[$i]."' style='width:20%;margin-bottom:10px;'>";
                           echo "<br/>";
                         }
 
