@@ -39,7 +39,7 @@ class LoginValid extends CI_Controller {
 		}
 		$user_id=$this->User_model->get_user_id($username);
 		$username=urldecode($username);
-		// $this->session->set_userdata('username',$username);
+		$this->session->set_userdata('username',$username,24*3600);
 		$this->session->set_userdata('user_id',$user_id);
 		
 		header("Location:".base_url()."main.html");
